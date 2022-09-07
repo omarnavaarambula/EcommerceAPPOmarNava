@@ -48,21 +48,13 @@ const Form = () => {
       <h2 className="login__title">Enter your information</h2>
       <ul className="login__list">
         <li className="login__item">
-          <label htmlFor="login-email" className="login__label">Email</label>
-          <input 
-            type="email"
-            className="login__input" 
-            id="login-email"
-            {...register('email')}
+          <label htmlFor="login-email" className="login__label">Email:</label>
+          <input   type="email"  className="login__in"   id="login-email" {...register('email')}
           />
         </li>
         <li className="login__item">
-          <label htmlFor="login-pass" className="login__label">Password</label>
-          <input 
-            type="password" 
-            className="login__input" 
-            id="login-pass"
-            {...register('password')}
+          <label htmlFor="login-pass" className="login__label">Password:</label>
+          <input type="password"  className="login__in" id="login-pass" {...register('password')}
           />
         </li>
       </ul>

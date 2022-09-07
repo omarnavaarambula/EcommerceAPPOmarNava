@@ -29,3 +29,7 @@
 .login__item{
   margin-bottom: 10px;
 }
+.login__in{
+  text-align: center;
+  width: 100%;
+}
