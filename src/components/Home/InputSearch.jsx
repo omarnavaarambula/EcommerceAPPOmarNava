@@ -11,8 +11,7 @@ const InputSearch = () => {
 
   return (
     <form onSubmit={handleSubmit(submit)} className='form-home'>
-      <input type="text" {...register('searchText')} />
-      <button>Search</button>
+
     </form>
   )
 }
