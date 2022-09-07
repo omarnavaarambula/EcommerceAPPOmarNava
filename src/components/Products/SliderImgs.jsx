@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 
 const classImg = ['', 'second-img', 'third-img']
-
 const SliderImgs = ({product}) => {
-
   const [indexClass, setIndexClass] = useState(0)
-  
   const clickPrev = () => {
     const prevClass = indexClass - 1
     if(prevClass < 0){
@@ -14,7 +11,6 @@ const SliderImgs = ({product}) => {
       setIndexClass(prevClass)
     }
   }
-
   const clickNext = () => {
     const nextClass = indexClass + 1
     if( nextClass >= classImg.length ) {
@@ -23,7 +19,6 @@ const SliderImgs = ({product}) => {
       setIndexClass(nextClass)
     }
   }
-
   return (
     <div className='slider'>
       <div onClick={clickPrev} className='slider__prev'>&#60;</div>

@@ -9,20 +9,11 @@ import './style/cartScreen.css'
 const CartScreen = () => {
 
   const dispatch = useDispatch()
-
   const postPurchase = () => {
 
     const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/purchases'
 
-    const objPurchase = {
-      street: "Green St. 1456",
-      colony: "Southwest",
-      zipCode: 12345,
-      city: "USA",
-      references: "Some references"
-    }
-
-    axios.post(URL, objPurchase, getConfig())
+    axios.post(URL, getConfig())
       .then(res => {
         console.log(res.data)
         dispatch(setCartGlobal(null))
@@ -44,8 +35,6 @@ const CartScreen = () => {
 
     totalPriceCart = cart.reduce(cb, 0)
   }
-
-
   return (
     <div className='cart'>
       <h2 className='cart__title'>My Cart</h2>
@@ -75,5 +64,4 @@ const CartScreen = () => {
     </div>  
   )
 }
-
 export default CartScreen

@@ -9,9 +9,7 @@ export const productsSlice = createSlice({
       setProductsGlobal: (state, action) => action.payload
     }
 })
-
 export const { setProductsGlobal } = productsSlice.actions;
-
 export const getAllproducts = () => (dispatch) => {
   dispatch(setIsLoadingGlobal(true))
   const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/products'
@@ -20,5 +18,4 @@ export const getAllproducts = () => (dispatch) => {
     .catch(err => console.log(err))
     .finally(() => dispatch(setIsLoadingGlobal(false)))
 }
-
 export default productsSlice.reducer;

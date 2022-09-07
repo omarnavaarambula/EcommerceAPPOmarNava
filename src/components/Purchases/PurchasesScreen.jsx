@@ -14,9 +14,7 @@ const PurchasesScreen = () => {
       .then(res => setPurchases(res.data.data.purchases))
       .catch(err => console.log(err))
   }, [])
-
-
-  return (
+ return (
     <div className='purchases'>
       <h2 className='purchases__title'>My Purchases</h2>
       <div className='purchases__container'>

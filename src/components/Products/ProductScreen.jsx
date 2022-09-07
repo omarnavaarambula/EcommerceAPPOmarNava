@@ -7,9 +7,7 @@ import SliderImgs from './SliderImgs'
 import './style/productScreen.css'
 
 const ProductScreen = () => {
-
   const [product, setProduct] = useState()
-  
   const {id} = useParams()
   
   useEffect(() => {
@@ -18,8 +16,6 @@ const ProductScreen = () => {
     .then(res => setProduct(res.data.data.product))
     .catch(err => console.log(err))
   }, [id])
-  
-
   return (
     <div className='product'>
       <SliderImgs product={product} />

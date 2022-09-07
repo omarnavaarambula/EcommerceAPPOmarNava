@@ -5,12 +5,9 @@ import { getAllProductsCart } from '../../store/slices/cart.slice'
 import getConfig from '../../utils/getConfig'
 
 const CartInfo = ({productCart}) => {
-
   const dispatch = useDispatch()
-
   const deleteProductFromCart = () => {
     const URL = `https://ecommerce-api-react.herokuapp.com/api/v1/cart/${productCart.id}`
-
     axios.delete(URL, getConfig())
       .then(res => {
         console.log(res.data)
@@ -18,7 +15,6 @@ const CartInfo = ({productCart}) => {
       })
       .catch(err => console.log(err.data))
   }
-
   return (
     <section className='cart-info'>
       <header className='cart-info__header'>
@@ -33,5 +29,4 @@ const CartInfo = ({productCart}) => {
     </section>
   )
 }
-
 export default CartInfo

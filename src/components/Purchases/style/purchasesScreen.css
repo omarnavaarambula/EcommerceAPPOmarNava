@@ -4,6 +4,8 @@
 .purchases__title {
   text-align: center;
 }
+
+
 .purchase-card {
   margin: var(--padding-mobile);
   border-radius: 10px;

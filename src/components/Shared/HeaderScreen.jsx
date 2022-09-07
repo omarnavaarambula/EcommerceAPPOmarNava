@@ -3,13 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 import './styles/headerScreen.css'
 
 const HeaderScreen = () => {
-
   const navbar = useRef()
-
   const clickMenuHam = () => {
     navbar.current.classList.toggle('navbar-open')
   }
-
   return (
     <header className="header">
       <h1 className="header__title">

@@ -4,13 +4,9 @@ import './style/loginScreen.css'
 import UserLogged from "./UserLogged";
 
 const LoginScreen = () => {
-
   const [token, setToken] = useState('')
-
   const changedToken = localStorage.getItem('token')
-
   useEffect(() => {
-
     setToken(changedToken)
   }, [changedToken])
 
@@ -18,14 +14,9 @@ const LoginScreen = () => {
     <div className="login">
       {
         token ?
-         <Form /> 
-        
-          
-  :
-         <UserLogged />
+         <Form />:<UserLogged />
       }
     </div>
   );
 };
-
 export default LoginScreen;

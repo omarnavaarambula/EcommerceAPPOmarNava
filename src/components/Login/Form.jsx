@@ -6,11 +6,8 @@ import './style/loginScreen.css'
 const Form = () => {
 
   const [isErrorLogin, setIsErrorLogin] = useState(false)
-
   const {handleSubmit, reset, register} = useForm()
-
   const navigate = useNavigate()
-
   const submit = data => {
     const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/users/login'
     axios.post(URL, data)

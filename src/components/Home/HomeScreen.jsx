@@ -5,14 +5,9 @@ import ProductCard from './ProductCard'
 import './style/homeScreen.css'
 
 const HomeScreen = () => {
-
-
   const products = useSelector(state => state.products)
 
   console.log(products)
-
-  
-
   return (
     <div className='home'>
       <InputSearch />

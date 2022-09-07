@@ -5,6 +5,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px
 }
+
 .card-product {
   width: min(100%, 220px);
   border-radius: 10px;
@@ -16,6 +17,7 @@
   box-shadow: 1px 1px 10px #888a;
   transition: box-shadow 200ms ease;
 }
+
 .card-product__header {
   height: 200px;
   padding: 20px;

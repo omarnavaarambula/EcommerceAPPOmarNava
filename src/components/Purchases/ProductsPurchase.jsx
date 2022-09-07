@@ -1,9 +1,7 @@
 import React from 'react'
 
 const ProductsPurchase = ({product}) => {
-
   console.log(product)
-
   return (
     <section className='product-purchase'>
       <h4 className='product-purchase__title'>{product.title}</h4>
@@ -12,5 +10,4 @@ const ProductsPurchase = ({product}) => {
     </section>
   )
 }
-
 export default ProductsPurchase
