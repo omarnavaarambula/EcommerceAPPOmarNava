@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 
 const InputSearch = () => {
 
-  const {handleSubmit, register, } = useForm()
+  const {handleSubmit, } = useForm()
 
   const submit = data => {
     console.log(data)
