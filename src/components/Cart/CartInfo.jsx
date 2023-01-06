@@ -7,7 +7,8 @@ import getConfig from '../../utils/getConfig'
 const CartInfo = ({productCart}) => {
   const dispatch = useDispatch()
   const deleteProductFromCart = () => {
-    const URL = `https://ecommerce-api-react.herokuapp.com/api/v1/cart/${productCart.id}`
+//     const URL = `https://ecommerce-api-react.herokuapp.com/api/v1/cart/${productCart.id}`
+        const URL = `https://e-commerce-api.academlo.tech/api/v1/cart/${productCart.id}`
     axios.delete(URL, getConfig())
       .then(res => {
         console.log(res.data)
