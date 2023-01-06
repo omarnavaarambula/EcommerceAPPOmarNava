@@ -10,7 +10,7 @@ const Form = () => {
   const navigate = useNavigate()
   const submit = data => {
 //     const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/users/login'
-    const URL = 'https://e-commerce-api.academlo.tech/'
+    const URL = 'https://e-commerce-api.academlo.tech/api/v1/users/login'
     
     axios.post(URL, data)
       .then(res => {
