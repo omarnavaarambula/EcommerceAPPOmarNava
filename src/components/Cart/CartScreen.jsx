@@ -12,7 +12,8 @@ const CartScreen = () => {
 
   const postPurchase = () => {
 
-    const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/purchases'
+//     const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/purchases'
+    const URL = 'https://e-commerce-api.academlo.tech/api/v1/purchases'
 
     const objPurchase = {
       street: "Green St. 1456",
