@@ -9,7 +9,8 @@ const ProductInfoId = ({product}) => {
   const [counter, setCounter] = useState(1)
   const dispatch = useDispatch()
   const addToCart = () => {
-    const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/cart'
+//     const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/cart'
+    const URL = 'https://e-commerce-api.academlo.tech/api/v1/cart'
     const addproduct = {
       id: product.id,
       quantity: counter
